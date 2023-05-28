@@ -9,11 +9,13 @@
     position: sticky;
     top:0;
     transition : all 300ms ease;
+    background-color: inherit;
 
     .container{
         position: relative;
         justify-content: space-between;
         font-weight: 500;
+        
 
         .name{
             font-size: 1.5rem;
