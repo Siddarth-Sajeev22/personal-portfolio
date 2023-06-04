@@ -20,9 +20,9 @@ const Hero = () => {
                     <motion.span 
                     variants={fadeIn("left","tween",0.4,1)}
                     className='secondaryText'>
-                        I design beautiful simple
+                        I build things for the web,
                         <br />
-                        things, and I love what I do.
+                        and I love what I do.
                     </motion.span>
                 </div>
 
@@ -31,7 +31,7 @@ const Hero = () => {
                 className={css.person}>
                     <motion.img 
                     variants={slideIn("up","tween",0.5,1.3)}
-                    src="./person.png" alt="" />
+                    src="./per.png" alt="" />
                 </motion.div>
 
 
@@ -47,8 +47,8 @@ const Hero = () => {
                     className={`${css.experience}`}>
                         <div className="primaryText">10</div>
                         <div className="secondaryText">
-                            <div>Years</div>
-                            <div>Experience</div>
+                            <div>Resume Link</div>
+                            
                         </div>
                     </motion.div>
 
@@ -56,8 +56,8 @@ const Hero = () => {
                     variant ={fadeIn("left","tween",0.5,1)}
                     className={css.certificate}>
                         <img src="./certificate.png" alt="" />
-                        <span>CERTIFIED PROFESSIONAL</span>
                         <span>WEB DEVELOPMENT</span>
+                        <span>ENTHUSIAST</span>
                     </motion.div>
                 </div>
 

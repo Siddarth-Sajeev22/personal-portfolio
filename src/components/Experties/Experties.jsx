@@ -1,16 +1,18 @@
 import React from 'react'
 import css from './Experties.module.scss'
 import { WhatDoIHelp, projectExperience } from '../../utils/data'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import { staggerContainer, fadeIn, textVariant } from '../../utils/motion'
 const Experties = () => {
     return (
         <motion.section
-        initial="hidden"
-        whileInView="show"
-        variants={staggerContainer}
-        viewport={{once:false, amount:0.25}}
-        className={css.wrapper}>
+            initial="hidden"
+            whileInView="show"
+            variants={staggerContainer}
+            viewport={{ once: false, amount: 0.25 }}
+            className={css.wrapper}>
+
+            <a className="anchor" id="experties"></a>
             <div className={`paddings yPaddings flexCenter innerWidth ${css.container}`}>
 
 
@@ -19,15 +21,15 @@ const Experties = () => {
                     {
                         projectExperience.map((exp, i) => {
                             return (
-                                <motion.div 
-                                variants={fadeIn("right","tween",(i+1)*0.2,1)}
-                                className={css.exp} key={i}>
+                                <motion.div
+                                    variants={fadeIn("right", "tween", (i + 1) * 0.2, 1)}
+                                    className={css.exp} key={i}>
                                     <div className="flexCenter">
                                         <exp.icon size={25} color="white" style={{ background: exp.bg }} />
                                     </div>
                                     <div>
                                         <span>{exp.name}</span>
-                                        <span className='secondaryText'>{exp.projects} Projects</span>
+                                        <span className='secondaryText'>{exp.projects}</span>
                                     </div>
                                 </motion.div>
                             )
@@ -36,12 +38,12 @@ const Experties = () => {
                     }
                 </div>
 
-                <motion.div 
-                variant={textVariant(0.5)}
-                className={css.rightSide}>
+                <motion.div
+                    variant={textVariant(0.5)}
+                    className={css.rightSide}>
 
                     <span className='primaryText'>
-                        What do I help? <br />
+                        About me <br />
                     </span>
                     {
                         WhatDoIHelp.map((paragraph, i) => {
@@ -51,12 +53,12 @@ const Experties = () => {
 
                     <div className={`flexCenter ${css.stats}`}>
                         <div className={`flexCenter ${css.stat}`}>
-                            <span className='primaryText'>285+</span>
-                            <span className='secondaryText'>Projects Completed</span>
+                            <span className='primaryText'>3rd</span>
+                            <span className='secondaryText'>Year Student</span>
                         </div>
-                        <div className={ `flexCenter ${css.stat}`}>
-                            <span className='primaryText'>285+</span>
-                            <span className='secondaryText'>Projects Completed</span>
+                        <div className={`flexCenter ${css.stat}`}>
+                            <span className='primaryText'>@</span>
+                            <span className='secondaryText'>College of Engineering, Trivandrum</span>
                         </div>
                     </div>
                 </motion.div>
