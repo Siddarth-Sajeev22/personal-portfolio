@@ -3,6 +3,7 @@ import css from './Portfolio.module.scss'
 import {motion} from 'framer-motion'
 import {fadeIn, staggerChildren} from "../../utils/motion"
 const Portfolio = () => {
+
     return (
         <motion.section
         variants={staggerChildren}
@@ -19,14 +20,11 @@ const Portfolio = () => {
                             <span className='primaryText'>
                                 My Latest Works 
                             </span>
-                            <p style={{marginTop:"10px"}}>
-                                Perfect solution for digital experience 
-                            </p>
                         </div>
 
-                        <span className='secondaryText'>
+                        <a href = "https://github.com/Siddarth-Sajeev22" target ="_blank" className='secondaryText'>
                             Explore More Works
-                        </span>
+                        </a>
                     </div>
                     
                     <div className={` flexCenter ${css.showCase}`}>

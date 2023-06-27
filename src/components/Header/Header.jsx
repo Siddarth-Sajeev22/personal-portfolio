@@ -42,9 +42,8 @@ const Header = () => {
                     <li><a href="#experties">Services</a></li>
                     <li><a href="#work">Experience</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li className={`flexCenter ${css.phone}`}>
-                        <p>7902273115</p>
-                        <BiPhoneCall size={"40px"}/>
+                    <li className={`flexCenter`}>
+                        <a href="https://drive.google.com/file/d/1Fbnx1-uqoY-uM4sPcWDoIHok4KzusAOh/view?usp=drive_link" target='_blank'>Resume</a>
                     </li>
                 </ul>
 

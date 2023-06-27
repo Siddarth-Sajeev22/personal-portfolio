@@ -1,6 +1,7 @@
 import React from 'react';
 import css from './Footer.module.scss';
 import {motion} from 'framer-motion';
+import {BiLogoLinkedin, BiLogoGithub} from 'react-icons/bi';
 import { footerVariants, staggerChildren } from '../../utils/motion';
 const Footer = () => {
     return (
@@ -29,16 +30,15 @@ const Footer = () => {
                 </div>
 
                 <div className={css.right}>
-                        <div className={css.info}>
+                        <div className={` flexCenter ${css.menu}`}>
                             <span className="secondaryText">Information</span>
                             <p>Thiruvananthapuram, Kerala, India</p>
                         </div>
 
-                        <div className={css.menu}>
-                            <li>Services</li>
-                            <li>Works</li>
-                            <li>Notes</li>
-                            <li>Experience</li>
+                        <div className={` flexCenter ${css.menu}`}>
+                            <li>siddarthsajeev2002@gmail.com</li>
+                            <li className={` ${css.phone}`}><a className={`flexCenter`} href="https://www.linkedin.com/in/siddarth-sajeev-17065522a/" target="_blank">LinkedIn - <BiLogoLinkedin size={"30px"}/></a></li>
+                            <li className={` ${css.phone}`}><a className={`flexCenter`} href="https://github.com/Siddarth-Sajeev22" target="_blank">Github -  <BiLogoGithub size={"30px"}/></a></li>
                         </div>
                 </div>
 
